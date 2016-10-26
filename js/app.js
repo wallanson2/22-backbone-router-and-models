@@ -120,7 +120,7 @@ var AppRouter = Backbone.Router.extend({
           for(var j = 0; j < categoryListings.length; j += 1){
             bigStr += '<div class="col-sm-4">'
             bigStr +=   '<h2><a href="#/books/'+ categoryListings[j].catName +'">' + categoryListings[j].catName + '</a></h2>'
-            bigStr +=   '<ol>'
+            bigStr +=   '<ol class="bookCatList">'
 
             for(var i = 0; i < categoryListings[j].subcatList.length; i += 1){                //   console.log(routeArr.length)
                 bigStr += '<li class="picTriggers"><a href="#/books/'+ categoryListings[j].catName.toLowerCase() + '/' +categoryListings[j].subcatList[i].toLowerCase() +'">' +  categoryListings[j].subcatList[i] + '</a></li>'
